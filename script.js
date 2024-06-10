@@ -1,3 +1,5 @@
+/* SLIDER */
+
 const excerciseContainers = [...document.querySelectorAll('.excercise-container')];
 const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
 const preBtn = [...document.querySelectorAll('.pre-btn')];
@@ -14,3 +16,7 @@ excerciseContainers.forEach((item, i) => {
         item.scrollLeft -= containerWidth;
     })           
 })
+
+
+/* EXCERCISE LIBRARY */
+

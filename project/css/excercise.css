@@ -79,18 +79,41 @@ header {
 
 /* MAIN */
 
-main, h2, p {
-    color: #ffffff;
-}
-
 .excer-search-container {
     padding: 3rem 0;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    /*flex-wrap: wrap;*/
+    flex-wrap: wrap;
 }
 
 .excer-card {
-    
+    width: 280px;
+    border: 1px solid #9c4be7;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 1rem;
+    margin: 10px;
 }
+
+.excer-card:hover {
+    box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+.excer-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom:  1rem;
+}
+
+.excer-card h2 {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.excer-card p {
+    color: #ffffff;
+    padding: 0.7rem;
+} 
