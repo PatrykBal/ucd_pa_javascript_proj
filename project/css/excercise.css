@@ -12,6 +12,12 @@ body {
     position: relative;
 }
 
+/* GLOBAL CSS */
+#obj-width {
+    max-width: 1200px;
+    margin: auto;
+}
+
 /* NAV */
 
 li, a, button {
@@ -69,4 +75,22 @@ header {
     cursor: pointer;
     transition: all 0.3s ease 0s;
     margin-left: 10px;
+}
+
+/* MAIN */
+
+main, h2, p {
+    color: #ffffff;
+}
+
+.excer-search-container {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /*flex-wrap: wrap;*/
+}
+
+.excer-card {
+    
 }
