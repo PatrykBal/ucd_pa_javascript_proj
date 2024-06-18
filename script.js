@@ -96,3 +96,7 @@ async function fetchData(searchQuery = '') {
         console.error(error);
     }
 }
+
+/* FORM */
+
+
