@@ -9,12 +9,12 @@
 </head>
 <body>
     <div class="container">
-        <form class="form" id="login">
+        <form class="form form-hidden" id="login">
             <h1 class="form-title">Login</h1>
-            <div class="form-message form-message-error">Incorrect username/password combinaton.</div>
+            <div class="form-message form-message-error"></div>
             <div class="form-input-group">
                 <input type="text" class="form-input" autofocus placeholder="Username or email">
-                <div class="form-input-error-message">This is an error message</div>
+                <div class="form-input-error-message"></div>
             </div>
             <div class="form-input-group">
                 <input type="password" class="form-input" autofocus placeholder="Password">
@@ -26,6 +26,30 @@
             </p>
             <p class="form-text">
                 <a class="form-link" href="./" id="linkCreateAccount">Dont have account? Create account</a>
+            </p>
+        </form>
+        <form class="form" id="creatAccount">
+            <h1 class="form-title">Create Account</h1>
+            <div class="form-message form-message-error"></div>
+            <div class="form-input-group">
+                <input type="text" class="form-input" autofocus placeholder="Username">
+                <div class="form-input-error-message"></div>
+            </div>
+            <div class="form-input-group">
+                <input type="text" class="form-input" autofocus placeholder="Email Address">
+                <div class="form-input-error-message"></div>
+            </div>
+            <div class="form-input-group">
+                <input type="password" class="form-input" autofocus placeholder="Password">
+                <div class="form-input-error-message"></div>
+            </div>
+            <div class="form-input-group">
+                <input type="password" class="form-input" autofocus placeholder=" Confirm Password">
+                <div class="form-input-error-message"></div>
+            </div>
+            <button class="form-button" type="submit"> Continue</button>
+            <p class="form-text">
+                <a class="form-link" href="./" id="linkLogin">Already have an account ? Sign in</a>
             </p>
         </form>
     </div>
