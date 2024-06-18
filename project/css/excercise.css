@@ -67,7 +67,7 @@ header {
     color: #000000;
 }
 
-#search-btn button {
+#search-btn {
     background-color: rgba(156,75,231,1 );
     padding: 9px 25px;
     border: none;
