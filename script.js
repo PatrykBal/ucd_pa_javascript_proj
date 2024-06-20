@@ -24,7 +24,7 @@ function setFormMessage(formElement, type, message) {
 
     messageElement.textContent = message;
     messageElement.classList.remove("form-message-success", "form-message-error");
-    messageElement.classList.add(`form-message--${type}`);
+    messageElement.classList.add(`form-message-${type}`);
 }
 
 function setInputError (inputElement, message) {
@@ -76,14 +76,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 /* EXERCISE LIBRARY */
 
-const url = 'https://exercisedb.p.rapidapi.com/exercises?limit=4&offset=0';
-const options = {
-	method: 'GET',
-	headers: {
-		'x-rapidapi-key': 'b7158ec930mshde39d189ea9e94fp177b2fjsn5149093c923e',
-		'x-rapidapi-host': 'exercisedb.p.rapidapi.com'
-	}
-};
 
 document.addEventListener('DOMContentLoaded', () => {
     fetchData();
