@@ -163,8 +163,7 @@ section h2 {
 
 
 .excercise-card {
-    flex: 0 0 25%;
-    max-width: 325px;
+    flex: 0 0 24%;
     height: 250px;
     margin-right: 10px;
     border: 2px solid #9c4be7;
@@ -237,26 +236,115 @@ section h2 {
 
 /* MEDIA QUERIES */
 
-@media (min-width: 1563px) {
-
+@media (max-width: 1563px) {
+    .container {
+        max-width: 1280px;
+    }
 }
 
-@media (min-width: 1280px) {
-
+@media (max-width: 1280px) {
+    .container {
+        max-width: 1024px;
+    }
+    .hero-main-text {
+        position: relative;
+        margin-top: 150px;
+        margin-left: 100px;
+    }
+    main h1 {
+        font-size: 40px;
+    }
+    main p {
+        font-size: 17px;
+        line-height: 25px;
+    }
 }
 
-@media (min-width: 1024px) {
-
+@media (max-width: 1024px) {
+    .container {
+        max-width: 768px;
+    }
+    .li, a, button {
+        font-size: 13px;
+    }
+    .hero-main-text {
+        position: relative;
+        margin-top: 150px;
+        margin-left: 80px;
+    }
+    main h1 {
+        font-size: 30px;
+    }
+    main p {
+        font-size: 14px;
+        line-height: 20px;
+        }
+    
+    .excercise-categories {
+        font-size: 25px;
+    }
+    .pre-btn img, .nxt-btn img {
+        height: 30px;
+    }
+    .excercise-cat-name {
+        margin-top: -50px;
+        font-size: 20px;
+    }
 }
 
-@media (min-width: 768px) {
-
+@media (max-width: 768px) {
+    .container {
+        max-width: 640px;
+    }
+    .hero-img img {
+        height: 35vh;
+        margin-left: 80px;
+        margin-top: 150px;
+    }
+    .excercise-categorys {
+        font-size: 25px;
+    }
+    .excercise-card {
+        flex: 0 0 23.5%;
+        height: 200px;
+        margin-right: 10px;              
+    }
+    .excercise-image {
+        height: 150px;
+    }
 }
 
-@media (min-width: 640px) {
+@media (max-width: 640px) {
+    .container {
+        max-width: 475px;
+    }
+    .logo {
+        max-width: 18%;
+    }
+    nav {
+        display: none;
+    }
+    .navbar-btn {
+        display: none;
+    }
+    main {
+        height: 50vh;
+    }
+    .hero-main-text {
+        margin-top: 100px;
+    }
 
+    .hero-img {
+        display: none;
+    }
+    .hero-main-text {
+        margin-left: 50px;
+    }
+    
 }
 
-@media (min-width: 475px) {
-
+@media (max-width: 475px) {
+    .container {
+        width: 100%;
+    }
 }
