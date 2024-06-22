@@ -14,8 +14,8 @@ excerciseContainers.forEach((item, i) => {
 
     preBtn[i].addEventListener('click', () => {
         item.scrollLeft -= containerWidth;
-    })           
-})
+    });           
+});
 
 /* HERO SECTION ANIMATION */
 

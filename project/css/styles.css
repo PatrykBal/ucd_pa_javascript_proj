@@ -163,7 +163,7 @@ section h2 {
 
 
 .excercise-card {
-    flex: 0 0 24%;
+    flex: 0 0 24.3%;
     height: 250px;
     margin-right: 10px;
     border: 2px solid #9c4be7;
@@ -258,6 +258,9 @@ section h2 {
         font-size: 17px;
         line-height: 25px;
     }
+    .exercise-card {
+        flex: 0 0 32.5%;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -290,6 +293,9 @@ section h2 {
         margin-top: -50px;
         font-size: 20px;
     }
+    .excercise-card {
+        flex: 0 0 31.8%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -304,13 +310,15 @@ section h2 {
     .excercise-categorys {
         font-size: 25px;
     }
-    .excercise-card {
-        flex: 0 0 23.5%;
-        height: 200px;
-        margin-right: 10px;              
-    }
+
     .excercise-image {
         height: 150px;
+    }
+    .excercise-card {
+        flex: 0 0 48%;
+    }
+    .excercise-cat-name {
+        margin-top: 0;
     }
 }
 
@@ -340,11 +348,19 @@ section h2 {
     .hero-main-text {
         margin-left: 50px;
     }
-    
+    .excercise-card {
+        flex: 0 0 48%; 
+    }
 }
 
 @media (max-width: 475px) {
     .container {
         width: 100%;
+    }
+    .excercise-card {
+        flex: 0 0 100%; 
+    }
+    .excercise-cat-name {
+        margin-top: 0;
     }
 }
