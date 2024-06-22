@@ -11,7 +11,7 @@
 <body>
 
 <!--NAV BAR-->
-<header>
+<header class="container">
     <image class="logo" src="/project/Images/projectlogo1.png" alt="FitFocus logo"></image> 
         <nav>
             <ul class="nav-links">
@@ -23,9 +23,17 @@
             <input type="text" placeholder="Search excercises here..." id="search-input">
              <button id="search-btn" onclick="fetchData()">Search</button>
         </div>
+        <button class="hamburger">
+            <div class="bar"></div>
+        </button>
 </header>
+<nav class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="excercise.html">Exercise Library</a>
+    </div>
+</nav>
 
-<main id="obj-width" class="excer-search-container">
+<main class="excer-search-container container">
     <div class="excer-card">
         <img src="https://placehold.co/600x400" id="bodypart" alt="">
         <h2>This is a title</h2>

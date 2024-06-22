@@ -8,15 +8,19 @@
     background-color:#000000;
 }
 
+.container {
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
 body {
     position: relative;
 }
 
-/* GLOBAL CSS */
-#obj-width {
-    max-width: 1200px;
-    margin: auto;
-}
+
 
 /* NAV */
 
@@ -39,6 +43,7 @@ header {
 .logo {
     max-width: 10%;
     cursor: pointer;
+    z-index: 99;
 }
 
 .nav-links {
@@ -77,6 +82,78 @@ header {
     margin-left: 10px;
 }
 
+/* NAV HAMBURGER */
+
+.hamburger {
+    position: relative;
+    display: block;
+    width: 35px;
+    cursor: pointer;
+    background: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    z-index: 100;
+}
+
+.hamburger .bar, .hamburger::after, .hamburger::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+    transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+    opacity: 0;
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    background: #000000;
+    z-index: 98;
+    padding-top: 120px;
+    transition: 0.4s;
+}
+
+.mobile-nav.is-active {
+    left: 0%;
+}
+
+.mobile-nav a {
+    background: none;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto  16px;
+    padding: 12px 16px;
+    background-color: #9c4be7;
+    display: block;
+    text-align: center;
+}
+.mobile-nav button {
+    background: none;
+    border: none;
+}
+
+.mobile-nav a:hover {
+    background-color: #761cca;
+}
+
 /* MAIN */
 
 .excer-search-container {
@@ -88,7 +165,7 @@ header {
 }
 
 .excer-card {
-    width: 280px;
+    width: 250px;
     border: 1px solid #9c4be7;
     border-radius: 10px;
     cursor: pointer;
@@ -117,3 +194,88 @@ header {
     color: #ffffff;
     padding: 0.7rem;
 } 
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1563px) {
+    .container {
+        max-width: 1280px;
+    }
+    .excer-card {
+        width: 300px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .container {
+        max-width: 1024px;
+    }
+    .excer-card {
+        width: 230px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 768px;
+    }
+    .li, a, button {
+        font-size: 13px;
+    }
+    .excer-card {
+        width: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 640px;
+    }   
+    .nav-links {
+        display: none;
+    }  
+    .logo {
+        max-width: 18%;
+    }
+    .excer-card {
+        width: 300px;
+    }     
+}
+
+@media (max-width: 640px) {
+    .container {
+        max-width: 475px;
+    }
+    .logo {
+        max-width: 18%;
+    }
+    .excer-card {
+        width: auto;
+    }
+}
+
+@media (max-width: 475px) {
+    .container {
+        width: 100%;
+    }
+    .logo {
+        max-width: 20%;
+    }
+    #search-input {
+        max-width: 160px;
+    }
+    .excer-card {
+        width: 100%;
+    }
+}
+
+/* MEDIA QUERY MOBILE NAV*/
+
+@media (min-width : 768px) {
+    .mobile-nav {
+        display: none;
+    }
+    .hamburger {
+        display: none;
+}
+}
