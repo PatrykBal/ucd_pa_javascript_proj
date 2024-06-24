@@ -29,4 +29,8 @@ Below the navigation bar you can find the main section of this page. In this sec
 
 ### Sign In - Sign Up page / form.html 
 
-In this page you can find the login/sign in form and the create account/sign up form. These forms alternate between each other by clicking the links at the bottom of the forms.
+In this page you can find the login/sign in form and the create account/sign up form which have form validation. These forms alternate between each other by clicking the links at the bottom of the forms.
+
+## Javascript Features.
+
+All my javascript features can be seen in script.js with a title above each coresponding code.

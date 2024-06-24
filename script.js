@@ -53,7 +53,7 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
-/* FORM */
+/* FORMS */
 
 function setFormMessage(formElement, type, message) {
     const messageElement = formElement.querySelector(".form-message");
