@@ -112,6 +112,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 /* EXERCISE LIBRARY */
 
+const url = 'https://exercisedb.p.rapidapi.com/exercises?limit=10&offset=0';
+const options = {
+	method: 'GET',
+	headers: {
+		'x-rapidapi-key': 'b7158ec930mshde39d189ea9e94fp177b2fjsn5149093c923e',
+		'x-rapidapi-host': 'exercisedb.p.rapidapi.com'
+	}
+};
 
 document.addEventListener('DOMContentLoaded', () => {
     fetchData();
