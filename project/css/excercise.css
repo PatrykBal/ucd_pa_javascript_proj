@@ -267,6 +267,9 @@ header {
     .excer-card {
         width: 100%;
     }
+    #search-input {
+        max-width: 130px;
+    }
 }
 
 /* MEDIA QUERY MOBILE NAV*/
